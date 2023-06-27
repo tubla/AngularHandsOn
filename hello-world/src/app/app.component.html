@@ -1,1 +1,6 @@
-<app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged()"></app-favorite>
+<!-- <app-favorite
+  [isFavorite]="post.isFavorite"
+  (change)="onFavoriteChanged($event)"
+></app-favorite> -->
+
+<app-like [likeCount]="tweet.likeCount" [isActive]="tweet.isActive"> </app-like>

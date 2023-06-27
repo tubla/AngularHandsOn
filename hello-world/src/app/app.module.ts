@@ -7,9 +7,10 @@ import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
 import { FormsModule } from '@angular/forms';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
-  declarations: [AppComponent, CoursesComponent, CourseComponent, FavoriteComponent],
+  declarations: [AppComponent, CoursesComponent, CourseComponent, FavoriteComponent, LikeComponent],
   imports: [BrowserModule, FormsModule],
   providers: [CoursesService],
   bootstrap: [AppComponent],
