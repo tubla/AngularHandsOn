@@ -20,4 +20,10 @@ export class AppComponent {
     likeCount: 0,
     isActive: false,
   };
+
+  //*ngIf, ng-template
+  courses = [1, 2];
+
+  // *ngSwitchCase
+  viewMode = 'map';
 }

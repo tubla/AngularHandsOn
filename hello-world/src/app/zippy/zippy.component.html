@@ -1,0 +1,41 @@
+<div class="zippy">
+  <div class="zippy-heading" [class.expanded]="isExpanded" (click)="toggle()">
+    {{ title }}
+    <span
+      class="glyphicon"
+      [ngClass]="{
+        'glyphicon-chevron-up': isExpanded,
+        'glyphicon-chevron-down': !isExpanded,
+    }"
+    ></span>
+  </div>
+  <div class="zippy-body" *ngIf="isExpanded">
+    <ng-content></ng-content>
+  </div>
+</div>
+
+<!--    
+    
+            MY IMPLEMENTATION
+
+<div
+  style="padding: 30px; border: 1px solid gray"
+  (click)="onShippingClick()"
+  [style.background-color]="shippingBackColor"
+>
+  <h3>Shipping Details</h3>
+</div>
+<div *ngIf="isShippingActive" style="padding: 30px; border: 1px solid gray">
+  <h5>Shipping Details Here</h5>
+</div>
+<div
+  style="padding: 30px; border: 1px solid gray"
+  (click)="onBillingClick()"
+  [style.background-color]="billingBackColor"
+>
+  <h3>Billing Details</h3>
+</div>
+<div *ngIf="isBillingActive" style="padding: 30px; border: 1px solid gray">
+  <h5>Billing Details Here</h5>
+</div>
+-->
